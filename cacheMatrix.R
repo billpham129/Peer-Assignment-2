@@ -5,12 +5,12 @@
 #	get the value of the inverse
 
 makeCacheMatrix <- function(mtrx = matrix()) {
-	inverse <- NULL			#store the inverse value
-	set <- function(x) {		#set the vector
+	inverse <- NULL		
+	set <- function(x) {	
 		mtrx <<- x		
 		inverse <<- NULL
 	}
-	get <- function() mtrx		#get the vector
+	get <- function() mtrx
 	setinv <- function(inv) inverse <<- inv
 	getinv <- function() inverse
 	list(set = set, get = get, setinv = setinv, getinv = getinv)
